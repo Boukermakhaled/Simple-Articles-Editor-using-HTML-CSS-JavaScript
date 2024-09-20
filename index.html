@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="controle">
+        <!-- <input type="text" list="fonts" id="font-inp" onkeyup="changeFont(this.value)"> -->
+        <select id="fonts" >
+            <option value="Ubuntu" onclick="changeFont(this.value)" >Ubuntu</option>
+            <option value="Rubik" onclick="changeFont(this.value)" >Rubik</option>
+            <option value="Roboto" onclick="changeFont(this.value)" >Roboto</option>
+            <option value="Sofadi one" onclick="changeFont(this.value)" >Sofadi one</option>
+        </select>
+        <button id="bold" style="font-weight: bold;" onclick="boldit()">B</button>
+        <div class="size">
+            <button id="min" onclick="sizer(this.id)"> - </button>
+            <p id="fontS"></p>
+            <button id="plus" onclick="sizer(this.id)"> + </button>
+        </div>
+        <div class="ivert-color">
+            <button id="invert" onclick="invertit()">invert colors</button>
+        </div>
+        </div>
+        <div class="content" id="content">
+         <p id="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptatibus atque consequatur ex officiis numquam! Nisi illo, iste animi quo commodi, veniam, placeat laboriosam nulla quidem ipsum debitis adipisci molestias?</p>
+         
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
